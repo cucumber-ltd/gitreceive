@@ -158,7 +158,7 @@ main() {
         exit 1
       fi
       local repo_path="$GITHOME/$RECEIVE_REPO"
-      ensure_bare_repo "$repo_path"
+      # ensure_bare_repo "$repo_path"
       ensure_prereceive_hook "$repo_path" "$GITHOME" "$SELF"
       cd "$GITHOME"
       # $SSH_ORIGINAL_COMMAND is set by `sshd'. It stores the originally intended command to be run by `git push'. In
